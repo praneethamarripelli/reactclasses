@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Product from './Product.js'
 
 function App() {
+ 
+
+  let prod1 = {
+    id:1,
+    name:"redmi 8 pro",
+    aprice:120000,
+    dprice:100000
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Product {...prod1}/>
+  )
 }
 
-export default App;
+export default App
