@@ -1,19 +1,14 @@
 import React from 'react'
-import Product from './Product.js'
 
 function App() {
- 
-
-  let prod1 = {
-    id:1,
-    name:"redmi 8 pro",
-    aprice:120000,
-    dprice:100000
-  }
-
+  let num = 100;
   return (
-    <Product {...prod1}/>
+    <div>
+      <h1>{num}</h1>
+      <button onClick={() => {
+        alert(200)
+      }}>Click</button>
+    </div>
   )
 }
-
 export default App
